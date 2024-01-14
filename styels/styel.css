@@ -189,6 +189,101 @@ main {
     margin-top: 50px;
 }
 
+.enjoy {
+    display: flex;
+    margin-top: 120px;
+    gap: 250px;
+}
+
+.ex-card h4 {
+    color: #131313;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.ex-card p {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.expolor-content h2 {
+    color: #131313;
+    font-size: 2.8125rem;
+    font-weight: 700;
+}
+
+.expolor-content p {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.enjoy .ex-card {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.expolor-content h2 {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.expolor-img img {
+    height: 90%;
+    margin-left: 50px;
+}
+
+.ten-years {
+    width: 342px;
+    height: 200px;
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 20px;
+    position: relative;
+    bottom: 150px;
+    right: 50px;
+}
+
+.ten-years h2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 4.0625rem;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 50px;
+}
+
+.ten-years p {
+    color: #FFF;
+    font-size: 1.5625rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+}
+
+.footer {
+    width: 1440px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FFF4E7;
+    margin: 50px auto;
+}
+
+.footer p {
+    color: #424242;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding-top: 40px;
+}
+
 /* Responsive Section */
 /* Smaller divece */
 @media screen and (max-width:576px) {
@@ -199,11 +294,31 @@ main {
     .nav-titel,
     .container-teams,
     .card-container,
-    .sponsor-img-titel
-    {
+    .sponsor-img-titel,
+    .enjoy {
         flex-direction: column;
     }
 
+    .enjoy {
+        gap: 30px;
+    }
+
+    .expolor-img img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .ten-years {
+        max-width: 300px;
+        position: static;
+        margin: 10px auto;
+    }
+    .footer{
+        max-width: 350px;
+    }
+    .footer p{
+        padding-top: 25px;
+    }
     .card-container {
         gap: 10px;
     }
@@ -233,8 +348,23 @@ main {
 
     .nav-titel,
     .container-teams,
-    .sponsor-img-titel {
+    .sponsor-img-titel,
+    .enjoy {
         flex-direction: column;
+    }
+    .footer{
+        max-width: 750px;
+    }
+    .enjoy {
+        gap: 30px;
+    }
+
+    .expolor-img {
+        margin: 0 auto;
+    }
+
+    .fetare-sec {
+        margin-top: -100px;
     }
 
     .nav-titel li {
